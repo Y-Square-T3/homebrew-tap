@@ -5,13 +5,13 @@
 class Opencode < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/Y-Square-T3/matrix"
-  version "1.1.60"
+  version "1.1.61"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.1.60/opencode-darwin-x64.zip"
+      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.1.61/opencode-darwin-x64.zip"
       sha256 ""
 
       def install
@@ -19,7 +19,7 @@ class Opencode < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.1.60/opencode-darwin-arm64.zip"
+      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.1.61/opencode-darwin-arm64.zip"
       sha256 ""
 
       def install
@@ -30,14 +30,14 @@ class Opencode < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.1.60/opencode-linux-x64.tar.gz"
+      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.1.61/opencode-linux-x64.tar.gz"
       sha256 ""
       def install
         bin.install "opencode"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.1.60/opencode-linux-arm64.tar.gz"
+      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.1.61/opencode-linux-arm64.tar.gz"
       sha256 ""
       def install
         bin.install "opencode"
