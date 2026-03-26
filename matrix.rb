@@ -5,22 +5,22 @@
 class matrix < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/Y-Square-T3/matrix"
-  version "1.4.0"
+  version "1.5.0"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.4.0/matrix-darwin-x64.zip"
-      sha256 "77bd5886045d007114401c15578885235938c5b4a444e4bd129e7c23efaf6fc2"
+      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.5.0/matrix-darwin-x64.zip"
+      sha256 "f746f6ef62b60c223128127d90789a4eac73e0ef086f624241aa51d869a181bf"
 
       def install
         bin.install "matrix"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.4.0/matrix-darwin-arm64.zip"
-      sha256 "8959874ef2221b7847c4b3fc2899f71424e1ea4b35f719dd736e4982fffb4acd"
+      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.5.0/matrix-darwin-arm64.zip"
+      sha256 "9982cfba9f8697ccf120d3eab27834999f227d99d55e8223309e090429f114c8"
 
       def install
         bin.install "matrix"
@@ -30,15 +30,15 @@ class matrix < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.4.0/matrix-linux-x64.tar.gz"
-      sha256 "301b600ac152d0e4f8207d3c07dfb5d26163fd289757d8af36fd593d6d316ecb"
+      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.5.0/matrix-linux-x64.tar.gz"
+      sha256 "84551db7edf229fe3ce73f3b02e2f6f3728aa16cfcf4984a46b15181d356fe56"
       def install
         bin.install "matrix"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.4.0/matrix-linux-arm64.tar.gz"
-      sha256 "6fe5d5493606b0a6684e695e04e04defa11ff0ab2696a9f464b623cbbb145614"
+      url "https://github.com/Y-Square-T3/matrix/releases/download/v1.5.0/matrix-linux-arm64.tar.gz"
+      sha256 "0e9ee2487424bf674d74cd3bf7c48d507fad5b50716bc2b71d536e441509e14a"
       def install
         bin.install "matrix"
       end
